@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 import './ProductPage.css';
 
 const products = [
@@ -16,7 +16,7 @@ const ProductPage = () => (
     <div className="products-list">
       {products.map(product => (
         <div className="product-item" key={product.id}>
-          <Link to={`/product/${product.id}`}>
+          <Link to={`/product/${product.id}`}>    {/* `/product/${product.id}` */}
             <img src={product.imageUrl} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.price}</p>
