@@ -1,0 +1,29 @@
+name: Build
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches: 
+      - 'main'
+
+jobs:
+  build:
+    runs-on: [ ubuntu-latest ]
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: npm install
+        run: npm install
+      - name: npm build
+        run: npm run build
+      - name: docker login
+        env:
+          CR_PAT: ${{ secrets.GH_TOKEN }}
+        run: echo $CR_PAT | docker login ghcr.io -u grischastorch23 --password-stdin
+      - name: docker build
+        run: docker build -t ghcr.io/grischastorch23/react-test .
+      - name: docker push
+        run: docker push ghcr.io/grischastorch23/react-test:latest

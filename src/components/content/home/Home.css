@@ -1,0 +1,13 @@
+.home-container {
+    padding: 20px;
+  }
+  
+  .description-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .description-box h2 {
+    margin-top: 0;
+  }

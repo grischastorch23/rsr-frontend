@@ -1,0 +1,36 @@
+.faq {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f3f2;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    border-bottom: 1px solid #000;
+  }
+  
+  .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .question-text {
+    flex: 1;
+  }
+  
+  .toggle-icon {
+    margin-left: 10px;
+  }
+  
+  .answer {
+    padding: 10px 0;
+  }

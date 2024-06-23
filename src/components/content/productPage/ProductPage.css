@@ -1,0 +1,32 @@
+.products-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .product-item {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-item h3 {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+  
+  .product-item p {
+    margin: 4px 0;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: red;
+  }

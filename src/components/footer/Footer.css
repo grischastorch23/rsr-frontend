@@ -1,0 +1,28 @@
+.footer {
+    background-color: #c7c6c6;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+  }
+  
+  .footer__nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer__nav-item {
+    margin-left: 1rem;
+  }
+  
+  .footer__nav-link {
+    text-decoration: none;
+    color:gray;
+  }

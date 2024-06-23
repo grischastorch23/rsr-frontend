@@ -1,0 +1,164 @@
+.checkout-content {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    width: 45%;
+    border: 2px solid #ccc;
+    border-radius: 0px;
+    padding: 25px;
+}
+
+.checkout-summary {
+    width: 55%;
+    flex: 1;
+    border: 2px solid #ccc;
+    border-radius: 0px;
+    padding: 75px;
+    padding-right: 25%;
+  }
+
+  .checkoutSummary{
+    border: 2px solid #8b8b8b;
+    border-radius: 5px;
+    padding: 25px;
+  }
+  
+  .checkout-summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="email"]::placeholder {
+    color: gray;
+}
+
+input[type="vorname"] {
+  width: 49%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="vorname"]::placeholder {
+  color: gray;
+}
+
+input[type="nachname"] {
+  width: 49%;
+  padding: 10px;
+  margin-left: 16px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="nachname"]::placeholder {
+  color: gray;
+}
+
+input[type="adresse"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="adresse"]::placeholder {
+  color: gray;
+}
+
+input[type="postleitzahl"] {
+  width: 49%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="postleitzahl"]::placeholder {
+  color: gray;
+}
+
+input[type="stadt"] {
+  width: 49%;
+  padding: 10px;
+  margin-left: 16px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="stadt"]::placeholder {
+  color: gray;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.payNowButton {
+  background-color: rgb(57, 57, 255);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 200px;
+}
+
+.paymentContentTitle, .lieferungTitle, .contactTitle {
+  font-size: large;
+  font-weight: bold;
+}
+
+.selectCountry{
+  margin-bottom: 25px;
+}
+
+.inputFieldLieferung {
+  margin-bottom: 25px;
+}
+
+.lieferungTitle , .paymentContentTitle{
+  margin-top: 50px;
+}
+
+.checkoutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
