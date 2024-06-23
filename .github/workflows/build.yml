@@ -21,7 +21,7 @@ jobs:
         run: npm run build
       - name: docker login
         env:
-          CR_PAT: ${{ secrets.GH_TOKEN }}
+          CR_PAT: ${{ secrets.TOKEN }}
         run: echo $CR_PAT | docker login ghcr.io -u grischastorch23 --password-stdin
       - name: docker build
         run: docker build -t ghcr.io/grischastorch23/react-test .
