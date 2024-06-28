@@ -23,8 +23,8 @@ const Checkout = ({ items, total, shippingCost }) => {
                             <input className="inputFieldLieferung" type="stadt" id="stadt" name="stadt" placeholder="Stadt"/>
                         </div>
                     <p className="paymentContentTitle">Zahlungsmethode</p>
-                    <div className="checkoutButton">
-                        <button className="payNowButton">Jetzt Bezahlen</button>
+                    <div className="checkoutButton" id="checkoutButtonDiv">
+                        <button className="payNowButton" id="payNowButton">Jetzt Bezahlen</button>
                     </div>
             </div>
             <div className="checkout-summary">

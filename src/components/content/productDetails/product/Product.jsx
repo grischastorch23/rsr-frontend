@@ -9,15 +9,15 @@ const Product = () => {
   };
 
   return (
-    <div className="product-container">
-      <div className="product-image">
+    <div className="product-container" id='product-container'>
+      <div className="product-image" id='product-image'>
         <img src="https://via.placeholder.com/150" alt="Product" />
       </div>
-      <div className="product-details">
+      <div className="product-details" id='product-details'>
         <h1>Amethyst 1</h1>
-        <div className="product-rating">
-          <span className="stars">★★★★★</span>
-          <span className="reviews">10 auf</span>
+        <div className="product-rating" id='product-rating'>
+          <span className="stars" id='productStars'>★★★★★</span>
+          <span className="reviews" id='productReview'>10 auf</span>
         </div>
         <div className="product-description">
           Kurze Beschreibung hier:

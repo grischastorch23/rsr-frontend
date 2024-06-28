@@ -11,15 +11,15 @@ const Feedback = () => {
   return (
     <div className="feedback-container">
       <h2>Was unsere Kunden sagen</h2>
-      <a href="#bewertung" className="write-review">Schreibe eine Bewertung!</a>
-      <div className="reviews">
+      <a href="#bewertung" className="write-review" id='write-review'>Schreibe eine Bewertung!</a>
+      <div className="reviews" id='reviews'>
         {reviews.map((review, index) => (
-          <div key={index} className="review-card">
-            <div className="stars">
+          <div key={index} className="review-card" id='review-card'>
+            <div className="stars" id='stars'>
               {'★'.repeat(review.rating) + '☆'.repeat(5 - review.rating)}
             </div>
             <p>"{review.text}"</p>
-            <p className="user">{review.user}</p>
+            <p className="user" id='user'>{review.user}</p>
           </div>
         ))}
       </div>
